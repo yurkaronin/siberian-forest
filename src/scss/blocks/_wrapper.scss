@@ -1,7 +1,15 @@
 /* обёртки */
 .wrapper {
-  max-width: 1180px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 45px;
+
+  @media (max-width: 768px) {
+    padding: 0 35px;
+  }
+
+  @media (max-width: 320px) {
+    padding: 0 10px;
+  }
 }

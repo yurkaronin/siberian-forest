@@ -12,11 +12,14 @@
 </head>
 
 <body>
-  @@include('../../build/svg/sprite.svg')
+  <div class="visually-hidden">
+    @@include('../../build/svg/sprite.svg')
+  </div>
 
   @@include('sections/header.html')
+  @@include('sections/navigation.html')
   <main>
-
+    <!-- @@include('sections/header.html') -->
 
   </main>
   @@include('sections/footer.html')

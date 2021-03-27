@@ -1,0 +1,11 @@
+/* Блок навигации п остранице */
+.page-navigation {
+  background-color: #ffffff;
+}
+
+.page-navigation .wrapper {
+  @media (max-width: 992px) {
+    width: 100%;
+    padding: 0;
+  }
+}

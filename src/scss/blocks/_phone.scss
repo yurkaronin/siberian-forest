@@ -1,0 +1,42 @@
+.phone {
+  font-family: oswald-sw;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  margin-left: 30px;
+  max-width: max-content;
+
+  @media (max-width: 650px) {
+    margin-bottom: 0;
+  }
+
+}
+
+.phone::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -26px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icons/phone.svg");
+  background-size: cover;
+}
+
+.phone__details {
+  margin: 0;
+  font-size: 13px;
+  line-height: 100%;
+
+  @media (max-width: 650px) {
+    display: none;
+  }
+}
