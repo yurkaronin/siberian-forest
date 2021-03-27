@@ -1,17 +1,24 @@
-/* Кнопки */
+/* Кнопки button, button--transparent, button-icon */
 .button {
-  background: #fb565a;
-  border-radius: 3px;
-  color: #ffffff;
+  font-family: 'montserrat-sw', sans-serif;
+  background: #EDCD28;
+  border-radius: 50px;
+  color: #000000;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  padding: 17px 40px 15px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 15px 20px;
   text-decoration: none;
   text-transform: uppercase;
   border: none;
   cursor: pointer;
   text-align: center;
   display: inline-block;
+  max-width: 350px;
+  letter-spacing: 2px;
+}
+
+.button--transparent {
+  background-color: transparent;
 }

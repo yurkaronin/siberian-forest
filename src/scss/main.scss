@@ -1,7 +1,9 @@
+/* шрифты */
+@import "./fonts";
 /* Основной стилевой файл */
 @import "./base";
-
+/* блоки по нотации BEM */
 @import "./blocks/**/*.scss";
-
+/* Логические секции страниц */
 @import "./sections/**/*.scss";
 
