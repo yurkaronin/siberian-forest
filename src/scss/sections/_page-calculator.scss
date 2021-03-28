@@ -1,6 +1,23 @@
 /* Калькулятор page-calculator */
 .page-calculator {
   background-color: #f0f1eb;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 60px 0 160px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/texture/forest-white.svg");
+    width: 100%;
+    display: block;
+    height: 127px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+  }
 
   @media (max-width: 1100px) {
     background-color: #ffffff;
