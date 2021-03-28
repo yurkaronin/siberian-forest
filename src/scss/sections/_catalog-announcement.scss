@@ -1,6 +1,6 @@
 /* Анонс каталога товаров catalog-announcement */
 .catalog-announcement {
-  background-color: #EFF1EB;
+  background-color: #eff1eb;
   padding: 0 0 80px;
 }
 
@@ -16,6 +16,19 @@
   margin: 0;
   padding: 0;
   margin-bottom: 50px;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: auto auto auto;
+  }
+
+  @media (max-width: 950px) {
+    grid-template-columns: auto auto;
+  }
+
+  @media (max-width: 650px) {
+    grid-template-columns: auto;
+    gap: 50px;
+  }
 }
 
 .catalog-announcement__buttons {
@@ -24,7 +37,27 @@
   grid-template-columns: auto auto;
   max-width: max-content;
 
+  @media (max-width: 570px) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: 450px) {
+    grid-template-columns: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
   & .button {
     padding: 15px 40px;
+
+    @media (max-width: 570px) {
+      padding: 15px;
+      width: 100%;
+      max-width: max-content;
+    }
+
+    @media (max-width: 450px) {
+      max-width: 100%;
+    }
   }
 }
