@@ -52,24 +52,3 @@
     display: none;
   }
 }
-
-.navigation__social {
-  display: none;
-
-  @media (max-width: 992px) {
-    display: block;
-  }
-}
-
-.navigation__social .icons-list {
-  margin: 0 auto;
-  gap: 25px;
-}
-
-.navigation__social img {
-  width: 40px;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}

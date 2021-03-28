@@ -1,0 +1,31 @@
+.advantages-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 80px;
+  grid-template-columns: auto auto auto;
+  align-items: baseline;
+  margin-bottom: 25px;
+}
+
+.advantages-list__item {
+  max-width: max-content;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+
+  & img {
+    display: block;
+    margin-bottom: 12px;
+    max-width: 50px;
+  }
+}
+
+.advantages-list__text {
+  margin: 0;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 120%;
+}

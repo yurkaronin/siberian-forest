@@ -50,6 +50,7 @@
   bottom: 0;
 }
 
+/* Стилизация активного бургера */
 .humburger.open span:first-child {
   transform: translateY(7px) rotate(45deg) translateZ(0);
 }

@@ -1,1 +1,40 @@
 /* Первый экран first-screen */
+.first-screen {
+  padding: 62px 0 180px;
+  position: relative;
+  background-image: linear-gradient(90deg, rgba(74, 45, 0, 0.8) 0%, rgba(14, 14, 14, 0.8) 0.01%, rgba(0, 0, 0, 0) 100%),
+    url("../img/bg/first-screen.jpg");
+
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.first-screen::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/texture/forest-white.svg");
+  width: 100%;
+  display: block;
+  height: 127px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.first-screen__content {
+    max-width: 625px;
+    margin: 0;
+    margin-right: auto;
+  }
+
+.first-screen {
+  & .title {
+    color: #ffffff;
+  }
+
+  & .subtitle {
+    color: #ffffff;
+  }
+}
