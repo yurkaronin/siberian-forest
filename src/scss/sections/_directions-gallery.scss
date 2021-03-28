@@ -1,7 +1,7 @@
 /* Галерея "Сферы применения" directions-gallery */
 .directions-gallery {
   padding: 40px 0 150px;
-  background-color: #EFF1EB;
+  background-color: #eff1eb;
   position: relative;
   background-image: url("../img/bg/forest.png");
 
@@ -10,22 +10,30 @@
   overflow: hidden;
   background-repeat: no-repeat;
 
-  &::after {
-  content: "";
-  position: absolute;
-  background-image: url("../img/texture/forest-linen.svg");
-  width: 100%;
-  display: block;
-  height: 127px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 3;
-}
+  @media (max-width: 720px) {
+    background-image: none;
+  }
 
-& .title {
-  max-width: 750px;
-}
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/texture/forest-linen.svg");
+    width: 100%;
+    display: block;
+    height: 127px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+
+    @media (max-width: 720px) {
+      background-image: url("../img/texture/forest-white.svg");
+    }
+  }
+
+  & .title {
+    max-width: 750px;
+  }
 
   & .subtitle {
     margin-bottom: 45px;
@@ -39,16 +47,32 @@
     gap: 30px;
     grid-template-columns: auto auto auto;
     margin-bottom: 65px;
+
+    @media (max-width: 950px) {
+      grid-template-columns: auto auto;
+    }
+
+    @media (max-width: 580px) {
+      grid-template-columns: auto;
+    }
   }
 
   & .promo {
     & .title,
     & .promo__text {
       color: #ffffff;
+
+      @media (max-width: 720px) {
+        color: #000000;
+      }
     }
 
     & .title {
       max-width: 350px;
+
+      @media (max-width: 720px) {
+        max-width: 100%;
+      }
     }
   }
 }
