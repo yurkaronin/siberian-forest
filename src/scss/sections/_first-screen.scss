@@ -24,10 +24,10 @@
 }
 
 .first-screen__content {
-    max-width: 625px;
-    margin: 0;
-    margin-right: auto;
-  }
+  max-width: 625px;
+  margin: 0;
+  margin-right: auto;
+}
 
 .first-screen {
   & .title {
@@ -37,4 +37,14 @@
   & .subtitle {
     color: #ffffff;
   }
+}
+
+.first-screen__button .button {
+  width: 100%;
+  max-width: 330px;
+  padding: 20px 20px;
+}
+
+.first-screen__advantages {
+  max-width: 570px;
 }

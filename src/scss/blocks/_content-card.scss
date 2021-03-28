@@ -1,0 +1,36 @@
+.clients-card {
+  margin: 0;
+  padding: 0;
+  max-width: 350px;
+}
+
+.clients-card__icon {
+  display: block;
+  max-width: 54px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.clients-card__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  margin: 0;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.clients-card__description {
+  font-size: 14px;
+  margin: 0;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.clients-card__link {
+  color: #596e1d;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  font-family: inherit;
+}
