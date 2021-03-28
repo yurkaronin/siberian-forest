@@ -8,6 +8,7 @@
   background-size: cover;
   background-position: center;
   z-index: 1;
+  overflow: hidden;
 }
 
 .first-screen::after {
@@ -43,6 +44,10 @@
   width: 100%;
   max-width: 330px;
   padding: 20px 20px;
+
+  @media (max-width: 640px) {
+    padding: 15px;
+  }
 }
 
 .first-screen__advantages {
