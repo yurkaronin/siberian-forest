@@ -1,7 +1,7 @@
 /* Кнопки button, button--transparent, button-icon */
 .button {
-  font-family: 'montserrat-sw', sans-serif;
-  background: #EDCD28;
+  font-family: "montserrat-sw", sans-serif;
+  background: #edcd28;
   border-radius: 50px;
   color: #000000;
   font-style: normal;
@@ -25,4 +25,23 @@
 
 .button--transparent {
   background-color: transparent;
+  border: 1px solid #596f1d;
+  border-radius: 50px;
+  color: #596f1d;
+}
+
+.button--arrow {
+  font-size: 0;
+  line-height: 0;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: max-content;
+
+  & img {
+    position: absolute;
+    width: 16px;
+    height: 13px;
+  }
 }

@@ -1,1 +1,30 @@
 /* Анонс каталога товаров catalog-announcement */
+.catalog-announcement {
+  background-color: #EFF1EB;
+  padding: 0 0 80px;
+}
+
+.catalog-announcement .title {
+  margin-bottom: 25px;
+}
+
+.catalog-announcement__list {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: auto auto auto auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.catalog-announcement__buttons {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: auto auto;
+  max-width: max-content;
+
+  & .button {
+    padding: 15px 40px;
+  }
+}
