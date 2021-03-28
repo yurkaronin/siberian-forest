@@ -7,7 +7,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 100%;
   padding: 15px 20px;
   text-decoration: none;
   text-transform: uppercase;
@@ -29,6 +29,7 @@
   border: 1px solid #596f1d;
   border-radius: 50px;
   color: #596f1d;
+  filter: none;
 }
 
 .button--arrow {
