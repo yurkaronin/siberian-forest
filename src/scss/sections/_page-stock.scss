@@ -31,4 +31,12 @@
   display: grid;
   grid-template-columns: auto auto;
   gap: 75px;
+
+  @media (max-width: 1000px) {
+    gap: 20px;
+  }
+
+  @media (max-width: 800px) {
+    grid-template-columns: auto;
+  }
 }

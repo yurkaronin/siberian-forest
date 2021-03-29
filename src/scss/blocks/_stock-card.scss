@@ -2,12 +2,31 @@
 .stock-card {
   position: relative;
   background-color: #000000;
+  overflow: hidden;
+
+  @media (max-width: 500px) {
+    min-height: 300px;
+  }
+
+  &::after {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.67) 9.44%, rgba(0, 0, 0, 0.2) 79.24%);
+    content: "";
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: block;
+  }
 }
 
 .stock-card__image {
   width: 100%;
   object-fit: cover;
   height: 100%;
+  z-index: 1;
 }
 
 .stock-card__description {
@@ -16,6 +35,11 @@
   left: 0;
   padding: 45px 35px;
   color: #ffffff;
+  z-index: 5;
+
+  @media (max-width: 1000px) {
+    padding: 25px;
+  }
 
   & .link {
     color: #edcd28;
@@ -26,9 +50,19 @@
 .stock-card__title {
   margin-top: 0;
   margin-bottom: 10px;
+
+  @media (max-width: 800px) {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
 }
 
 .stock-card__text {
   margin-top: 0;
   margin-bottom: 5px;
+
+  @media (max-width: 800px) {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
 }
