@@ -1,1 +1,8 @@
 /* Информационный раздел page-content */
+.page-content {
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 60px 0 160px;
+}
