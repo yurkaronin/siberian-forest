@@ -5,8 +5,7 @@
   z-index: 1;
   overflow: hidden;
   padding: 0 0 160px;
-
-  &::after {
+  s &::after {
     content: "";
     position: absolute;
     background-image: url("../img/texture/forest-lavenda.svg");
@@ -17,7 +16,7 @@
     left: 0;
     right: 0;
     z-index: 3;
-}
+  }
 }
 
 .works-gallery__list {
@@ -30,10 +29,10 @@
   margin-bottom: 65px;
 
   @media (max-width: 950px) {
-      grid-template-columns: auto auto;
-    }
+    grid-template-columns: auto auto;
+  }
 
-    @media (max-width: 580px) {
-      grid-template-columns: auto;
-    }
+  @media (max-width: 580px) {
+    grid-template-columns: auto;
+  }
 }

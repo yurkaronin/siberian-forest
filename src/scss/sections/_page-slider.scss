@@ -5,6 +5,7 @@
   overflow: hidden;
   padding: 60px 0 160px;
 
+
   &::after {
     content: "";
     position: absolute;
@@ -24,3 +25,7 @@
   margin: 0;
   padding: 0;
 }
+
+.page-slider__item {
+    margin-bottom: 50px;
+  }
