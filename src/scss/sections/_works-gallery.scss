@@ -5,7 +5,7 @@
   z-index: 1;
   overflow: hidden;
   padding: 0 0 160px;
-  s &::after {
+  &::after {
     content: "";
     position: absolute;
     background-image: url("../img/texture/forest-lavenda.svg");
